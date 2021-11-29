@@ -41,8 +41,8 @@ dbt_top_events = ECSOperator(
     },
     network_configuration={
         "awsvpcConfiguration": {
-            "securityGroups": ["<SECURITY_GROUP_ID>"],
-            "subnets": ["<SUBNET_ID>", "<SUBNET_ID>"],
+            "securityGroups": ["sg-0c3a574bff879e4c5"],
+            "subnets": ["subnet-093dc1f648e45cf70", "subnet-002c70b3039933a2a"],
         },
     },
     awslogs_group="/ecs/dbt-cdk",

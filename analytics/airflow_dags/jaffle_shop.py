@@ -40,11 +40,11 @@ dbt_seed = ECSOperator(
     },
     network_configuration={
         "awsvpcConfiguration": {
-            "securityGroups": ["sg-0c3a574bff879e4c5"],
-            "subnets": ["subnet-093dc1f648e45cf70", "subnet-002c70b3039933a2a"],
+            "securityGroups": ["sg-06b8b78f18eb450f1"],
+            "subnets": ["subnet-04c3e82ee51a5d470", "subnet-0bc5f92fe1dc3bf09"],
         },
     },
-    awslogs_group="/ecs/dbt-cdk",
+    awslogs_group="/ecs/jaffle_shop",
     awslogs_stream_prefix="ecs/jaffle_shop-container",
 )
 
@@ -66,11 +66,11 @@ dbt_test1 = ECSOperator(
     },
     network_configuration={
         "awsvpcConfiguration": {
-            "securityGroups": ["sg-0c3a574bff879e4c5"],
-            "subnets": ["subnet-093dc1f648e45cf70", "subnet-002c70b3039933a2a"],
+            "securityGroups": ["sg-06b8b78f18eb450f1"],
+            "subnets": ["subnet-04c3e82ee51a5d470", "subnet-0bc5f92fe1dc3bf09"],
         },
     },
-    awslogs_group="/ecs/dbt-cdk",
+    awslogs_group="/ecs/jaffle_shop",
     awslogs_stream_prefix="ecs/jaffle_shop-container",
 )
 
@@ -92,11 +92,11 @@ dbt_test2 = ECSOperator(
     },
     network_configuration={
         "awsvpcConfiguration": {
-            "securityGroups": ["sg-0c3a574bff879e4c5"],
-            "subnets": ["subnet-093dc1f648e45cf70", "subnet-002c70b3039933a2a"],
+            "securityGroups": ["sg-06b8b78f18eb450f1"],
+            "subnets": ["subnet-04c3e82ee51a5d470", "subnet-0bc5f92fe1dc3bf09"],
         },
     },
-    awslogs_group="/ecs/dbt-cdk",
+    awslogs_group="/ecs/jaffle_shop",
     awslogs_stream_prefix="ecs/jaffle_shop-container",
 )
 
@@ -118,11 +118,11 @@ dbt_test3 = ECSOperator(
     },
     network_configuration={
         "awsvpcConfiguration": {
-            "securityGroups": ["sg-0c3a574bff879e4c5"],
-            "subnets": ["subnet-093dc1f648e45cf70", "subnet-002c70b3039933a2a"],
+            "securityGroups": ["sg-06b8b78f18eb450f1"],
+            "subnets": ["subnet-04c3e82ee51a5d470", "subnet-0bc5f92fe1dc3bf09"],
         },
     },
-    awslogs_group="/ecs/dbt-cdk",
+    awslogs_group="/ecs/jaffle_shop",
     awslogs_stream_prefix="ecs/jaffle_shop-container",
 )
 
@@ -145,11 +145,11 @@ dbt_run = ECSOperator(
     },
     network_configuration={
         "awsvpcConfiguration": {
-            "securityGroups": ["sg-0c3a574bff879e4c5"],
-            "subnets": ["subnet-093dc1f648e45cf70", "subnet-002c70b3039933a2a"],
+            "securityGroups": ["sg-06b8b78f18eb450f1"],
+            "subnets": ["subnet-04c3e82ee51a5d470", "subnet-0bc5f92fe1dc3bf09"],
         },
     },
-    awslogs_group="/ecs/dbt-cdk",
+    awslogs_group="/ecs/jaffle_shop",
     awslogs_stream_prefix="ecs/jaffle_shop-container",
 )
 
